@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kur Ekranı</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1f2022;
+            font-family: open-sans, sans-serif;
+
+        }
+
+        .container {
+            text-align: center;
+            background-color: #1f2022;
+        }
+
+        .gri {
+            color: gray;
+            font-size: 36px;
+        }
+
+        .doviz-miktar {
+            color: #fff;
+            font-size: 58px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .miktar {
+            color: #fff;
+        }
+
+        .doviz-secenekler {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .secenek {
+            color: #808080;
+            font-size: x-large;
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+
+        .nokta {
+            display: inline-block;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .usd {
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--?   -->
+    <div class="container">
+        <div class="doviz-miktar">
+            <span class="gri">$</span>
+            <span class="miktar">1 324</span>
+            <span class="gri">26</span>
+        </div>
+        <div class="doviz-seçenekler">
+            <span class="secenek usd">USD</span>
+            <span class="secenek">EUR</span>
+            <span class="secenek">BTC</span>
+            <span class="secenek">ETC</span>
+            <div class="secenek nokta">...</div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Macondo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #4147BF;
+            color: black;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 10px;
+            flex-wrap: wrap;
+        }
+
+        .navbar .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            font-family: 'Macondo', cursive;
+            cursor: pointer;
+        }
+
+        .navbar .menu {
+            display: flex;
+            gap: 20px;
+            font-family: 'Dancing Script', cursive;
+            font-size: 20px;
+
+        }
+
+        .menu a {
+            font-size: 30px;
+            text-decoration: none;
+            color: #4147BF;
+            font-weight: bold;
+
+
+        }
+
+        .gece-modu {
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .navbar .menu {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">ENESYILMAZ</div>
+        <div class="menu">
+            <div><a href="index.html">Anasayfa</a></div>
+            <div><a href="kur-ekrani.html">Kur Ekranı</a></div>
+            <div><a href="Dashboard-tasarimi.html">Dashboard</a></div>
+            <div><a href="login-ekrani.html">Login</a></div>
+        </div>
+        <div class="gece-modu">🌙</div>
+        <script>
+            const geceModu = document.querySelector('.gece-modu');
+            const navbar = document.querySelector('.navbar');
+            const menu = document.querySelector('.menu div');
+            const logo = document.querySelector('.logo');
+
+            geceModu.addEventListener('click', () => {
+                if (navbar.style.backgroundColor === 'black') {
+                    navbar.style.backgroundColor = 'white';
+                    logo.style.color = 'black';
+                    menu.forEach(menu => menu.style.color = 'black');
+                } else {
+                    navbar.style.backgroundColor = 'black';
+                    logo.style.color = 'white';
+                    menu.forEach(menu => menu.style.color = 'white');
+                }
+            });
+        </script>
+</body>
+
+</html>
